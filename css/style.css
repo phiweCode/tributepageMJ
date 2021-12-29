@@ -12,7 +12,6 @@ body
     justify-content: center;
     align-items: center;
     background:linear-gradient(135deg , rgb(25, 25, 58) , rgb(82, 28, 28));
-    
     height: 100vh;
     
 } 
@@ -64,7 +63,7 @@ body
 } 
 
 p{
-    margin-bottom: 1em;
+    margin-bottom: 1.1em;
 }
 
 #img-div
