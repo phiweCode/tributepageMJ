@@ -1,0 +1,165 @@
+*
+{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box; 
+} 
+
+body
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg , rgb(25, 25, 58) , rgb(82, 28, 28));
+    
+    height: 100vh;
+    
+} 
+
+#main
+{   
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    width: 80%; 
+    box-shadow: 0px 0px 7px 1px;   
+    color: #ccc;
+    padding:2%;
+    height:95vh; 
+    background: linear-gradient(135deg , rgb(25, 25, 58) , rgb(82, 28, 28));
+    overflow: hidden; 
+ 
+}  
+
+#title
+{    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+ 
+} 
+
+p{
+    margin-bottom: 1em;
+}
+
+#img-div
+{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items:center ; 
+    text-align: center;
+    color: #eee; 
+    background-color: rgba(10, 6, 6, 0.322); 
+    margin-bottom: 1em;  
+    padding: 2%;
+    border-radius: 7px ;
+   
+}
+
+#image
+{
+    width: 100%; 
+    height:auto;  
+    max-height: 300px; 
+    margin-bottom: 20px; 
+    
+    
+}  
+.imgs
+{   height: auto;
+    width:40%;
+}
+
+#image-caption 
+{
+    text-align: start;
+}  
+
+#date-range
+{
+    color:rgb(185, 129, 129); 
+}
+
+#tribute-info 
+{   
+   
+    overflow-y: scroll;
+    height: 90%; 
+    width:90%;  
+    padding: 30px; 
+    color: #ccc;
+
+} 
+
+#tribute-info::-webkit-scrollbar {
+    width: 10px;
+    }
+    
+#tribute-info::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+#tribute-info::-webkit-scrollbar-thumb {
+    background-color: rgba(102, 40, 40, 0.664);
+    outline: 1px solid rgb(185, 129, 129); 
+    border-radius: 2px;
+    
+    } 
+
+#date-range
+{
+    margin-bottom: 5px;
+}
+
+#timeline 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start; 
+    margin-bottom: 1em; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 11px; 
+        font-weight: 500;
+} 
+
+#timeline li 
+{
+    margin: 5px; 
+} 
+
+hr{
+    margin:1em;
+}
+span
+{
+    margin:2em; 
+}
+
+@media (max-width: 491px)
+{   
+    #main
+    {   
+        width: 96%;
+        height: 98%;
+        overflow: scroll;
+    }
+    #tribute-info
+    {   
+        width:100%; 
+        height: 80%;
+        overflow-y:visible; 
+        
+    } 
+    #timeline 
+    {   
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 11px; 
+        font-weight: 500;
+        width:100%;
+    }
+}
